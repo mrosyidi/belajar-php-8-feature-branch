@@ -11,16 +11,16 @@
   $example->data = true;
   $example->data = ["Eko"];
 
-  function sampleFunction(string|array $data): void
+  function sampleFunction(string|array $data): string|array
   {
     if(is_array($data))
     {
-      echo "Array" . PHP_EOL;
+      return "Array" . PHP_EOL;
     }else if(is_string($data))
     {
-      echo "String" . PHP_EOL;
+      return "String" . PHP_EOL;
     }
   }
 
-  sampleFunction("Eko");
-  sampleFunction([]);
+  var_dump(sampleFunction("Eko"));
+  var_dump(sampleFunction([]));
