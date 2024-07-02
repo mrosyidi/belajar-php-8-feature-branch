@@ -32,3 +32,15 @@
   };
 
   echo $result . PHP_EOL;
+
+  $value = 80;
+  $result = match(true)
+  {
+    $value >= 80 => "A",
+    $value >= 70 => "B",
+    $value >= 60 => "C",
+    $value >= 50 => "D",
+    default => "E"
+  };
+
+  echo $result . PHP_EOL;
