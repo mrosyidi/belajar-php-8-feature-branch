@@ -21,9 +21,11 @@
 
   class LoginRequest
   {
+    #[Length(min:4,max:10)]
     #[NotBlank]
     var ?string $username;
 
+    #[Length(min:8,max:10)]
     #[NotBlank]
     var ?string $password;
   }
