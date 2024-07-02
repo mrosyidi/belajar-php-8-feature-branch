@@ -10,3 +10,4 @@
 
   // with named argument
   sayHello(last: "Khannedy", first: "Eko", middle: "Kurniawan");
+  sayHello("Eko", last: "Khannedy");
